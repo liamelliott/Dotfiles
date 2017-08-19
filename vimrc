@@ -17,10 +17,17 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-surround' 
 
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+" Colors
+Plugin 'notpratheek/vim-luna'
+
+" General
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -29,9 +36,13 @@ filetype plugin indent on
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
 set laststatus=2
+set background=dark
 
 " Set tabs and spacing
 set sw=4
 set softtabstop=4
 set expandtab
+
+" Line numbers and style
+set number
 
