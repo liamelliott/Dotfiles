@@ -5,3 +5,5 @@
 	email = liamelliott1123@gmail.com
 [core]
 	editor = vim
+[merge]
+        ff = no
