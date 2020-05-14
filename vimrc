@@ -46,3 +46,6 @@ set expandtab
 " Line numbers and style
 set number
 
+" Move annoying vim temporary files to tmp DIR
+set backupdir=$TMPDIR//
+set directory=$TMPDIR//
