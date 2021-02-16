@@ -39,8 +39,8 @@ set laststatus=2
 set background=dark
 
 " Set tabs and spacing
-set sw=4
-set softtabstop=4
+set sw=2
+set softtabstop=2
 set expandtab
 
 " Line numbers and style
