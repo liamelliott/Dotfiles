@@ -10,20 +10,6 @@ IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb/history"
 IRB.conf[:PROMPT_MODE]  = :SIMPLE
 IRB.conf[:AUTO_INDENT]  = true
 
-### Wirble
-# This adds some nice features to the IRB.  The obvious change is
-# coloring.
-# You can also use ri from the irb:
-#  >> Object.ri 'Array#map'
-begin
-  require 'wirble'
-
-  Wirble.init
-  Wirble.colorize
-rescue LoadError => err
-  warn "Unable to load Wirble: #{err} (maybe: gem install wirble)"
-end
-
 ### What? method
 # The Object.what? method returns the method(s) that will return
 # a specific value.
