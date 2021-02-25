@@ -61,4 +61,9 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.fastlane/bin:$PATH"
 
+# Fancy-pants rubocop for diff from specific branch
+rubodiff() {
+  git diff-tree -r --no-commit-id --name-only head "$1" | xargs rubocop --only-recognized-file-types
+}
+
 
