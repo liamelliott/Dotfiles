@@ -18,6 +18,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround' 
+Plugin 'tpope/vim-commentary'
 
 " Airline
 Plugin 'vim-airline/vim-airline'
@@ -28,6 +29,7 @@ Plugin 'notpratheek/vim-luna'
 
 " General
 Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -45,6 +47,7 @@ set expandtab
 
 " Line numbers and style
 set number
+set nrformats-=octal
 
 " Move annoying vim temporary files to tmp DIR
 set backupdir=$TMPDIR//

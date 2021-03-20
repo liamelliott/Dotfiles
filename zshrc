@@ -66,4 +66,3 @@ rubodiff() {
   git diff-tree -r --no-commit-id --name-only head "$1" | xargs rubocop --only-recognized-file-types
 }
 
-

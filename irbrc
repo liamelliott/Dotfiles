@@ -24,23 +24,6 @@ rescue LoadError => err
   warn "Unable to load What Methods: #{err} (maybe: gem install what_methods)"
 end
 
-### ap method
-# ap() is an enhanced version of pp()
-# Example:
-# >> ap (1..4).to_a
-# [
-#     [0] 1,
-#     [1] 2,
-#     [2] 3,
-#     [3] 4
-# ]
-# => nil
-begin
-  require 'ap'
-rescue LoadError => err
-  warn "Unable to load Awesome Print (ap): #{err} (maybe: gem install awesome_print)"
-end
-
 ### Rails
 # Some features that make using irb for rails much nicer.
 if rails_env = ENV['RAILS_ENV']
