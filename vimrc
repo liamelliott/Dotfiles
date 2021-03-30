@@ -19,6 +19,8 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround' 
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-projectionist'
+Plugin 'tpope/vim-dispatch'
 
 " Airline
 Plugin 'vim-airline/vim-airline'
@@ -48,6 +50,7 @@ set expandtab
 " Line numbers and style
 set number
 set nrformats-=octal
+colorscheme luna
 
 " Move annoying vim temporary files to tmp DIR
 set backupdir=$TMPDIR//
